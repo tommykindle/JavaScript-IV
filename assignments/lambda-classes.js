@@ -55,7 +55,7 @@ class ProjectManagers extends Instructor {
         this.favInstructor = props.favInstructor
     }
     standUp(channel) {
-        return `${this.name} announces to ${channel} @channel standy times!`
+        return `${this.name} announces to @${channel} standy times!`
     }
 
     debugsCode(student, subject) {
@@ -129,4 +129,17 @@ const john = new ProjectManagers({
 
 
 //Console Log Tests. 
-console.log(tommy.speak); 
+console.log(tommy.speak());
+console.log(dan.demo('JavaScript')); 
+console.log(ryan.grade(tommy , 'JavaScript'));
+console.log(jane.listSubjects()); 
+console.log(tommy.PRAssignment('JavaScript'));
+console.log(jane.sprintChallenge('JavaScript'));
+console.log(henry.standUp('web21'));
+console.log(john.debugsCode(tommy, 'JavaScript')); 
+console.log(henry); 
+console.log(dan); 
+console.log(tommy);   
+
+
+  
