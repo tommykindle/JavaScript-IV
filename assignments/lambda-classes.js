@@ -47,3 +47,18 @@ class Student extends Person {
     }
 }
 
+
+class ProjectManagers extends Instructor {
+    constructor(props) {
+        super(props);
+        this.gradClassName = props.gradClassName
+        this.favInstructor = props.favInstructor
+    }
+    standUp(channel) {
+        return `${this.name} announces to ${channel} @channel standy times!`
+    }
+
+    debugsCode(student, subject) {
+        return `${this.name} debugs ${student.name}'s code on ${subject}`
+    }
+}
