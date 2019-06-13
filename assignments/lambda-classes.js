@@ -62,3 +62,20 @@ class ProjectManagers extends Instructor {
         return `${this.name} debugs ${student.name}'s code on ${subject}`
     }
 }
+
+
+const dan = new Instructor({
+    name: 'Dan',
+    location: 'Lambda School',
+    age: 55,
+    favLanguage: 'JavaScript',
+    catchPhrase: 'Google it!'
+}); 
+
+const ryan = new Instructor({
+    name: 'Ryan',
+    location: 'Lambda School',
+    age: 33,
+    favLanguage: 'Visual Basic',
+    catchPhrase: 'It is easy, just do it!' 
+}); 
