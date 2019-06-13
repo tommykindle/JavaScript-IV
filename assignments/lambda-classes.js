@@ -6,7 +6,7 @@ class Person {
         this.location = props.location
     }
     speak() {
-        `Hello my name is ${this.name}, I am from ${this.location} `
+       return `Hello my name is ${this.name}, I am from ${this.location} `
     }
 }
 // Instructor Class
@@ -18,11 +18,11 @@ class Instructor extends Person {
         this.catchPhrase = props.catchPhrase
     }
     demo(subject) {
-        `Today we are learning about ${subject}`
+       return `Today we are learning about ${subject}`
     }
 
     grade(student, subject) {
-        `${student.name} receives a perfect score on ${subject}`
+       return `${student.name} receives a perfect score on ${subject}`
     }
 }
 
@@ -39,11 +39,11 @@ class Student extends Person {
     }
 
     PRAssignment(subject) {
-        `${this.name} has submitted a PR for ${subject}`
+       return `${this.name} has submitted a PR for ${subject}`
     }
 
     sprintChallenge(subject) {
-        `${this.name} has begun sprint challenge on ${subject}`
+       return `${this.name} has begun sprint challenge on ${subject}`
     }
 }
 
@@ -70,7 +70,7 @@ const dan = new Instructor({
     age: 55,
     favLanguage: 'JavaScript',
     specialty: 'Open-Source',
-    catchPhrase: 'Google it!'
+    catchPhrase: 'Google it!',
 });
 
 const ryan = new Instructor({
@@ -79,7 +79,7 @@ const ryan = new Instructor({
     age: 33,
     favLanguage: 'Visual Basic',
     specialty: 'Full-Stack',
-    catchPhrase: 'It is easy, just do it!'
+    catchPhrase: 'It is easy, just do it!',
 });
 
 
@@ -90,7 +90,7 @@ const tommy = new Student({
     location: 'California',
     previousBackground: 'Network Administrator',
     className: 'WEB21',
-    favSubjects: ['HTML', 'CSS', 'JavaScript']
+    favSubjects: ['HTML', 'CSS', 'JavaScript'],
 
 });
 
@@ -100,7 +100,7 @@ const jane = new Student({
     location: 'Lambda School',
     previousBackground: 'Playing Video Games',
     className: 'WEB21',
-    favSubjects: ['HTML', 'CSS', 'JavaScript']
+    favSubjects: ['HTML', 'CSS', 'JavaScript'],
 });
 
 
@@ -113,7 +113,7 @@ const henry = new ProjectManagers({
     specialty: 'Full-Stack',
     catchPhrase: 'This way is easier',
     gradClassName: 'WEB18',
-    favInstructor: 'Dan'
+    favInstructor: 'Dan',
 });
 
 const john = new ProjectManagers({
@@ -124,8 +124,9 @@ const john = new ProjectManagers({
     specialty: 'Full-Stack',
     catchPhrase: 'This way is more complicated',
     gradClassName: 'WEB16',
-    favInstructor: 'Ryan'
+    favInstructor: 'Ryan',
 });
 
 
 //Console Log Tests. 
+console.log(tommy.speak); 
