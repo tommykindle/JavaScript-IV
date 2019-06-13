@@ -101,4 +101,31 @@ const jane = new Student({
     previousBackground: 'Playing Video Games',
     className: 'WEB21',
     favSubjects: ['HTML', 'CSS', 'JavaScript']
-}); 
+});
+
+
+//Project Managers 
+const henry = new ProjectManagers({
+    name: 'Henry',
+    location: 'Lambda School',
+    age: 28,
+    favLanguage: 'Pascal',
+    specialty: 'Full-Stack',
+    catchPhrase: 'This way is easier',
+    gradClassName: 'WEB18',
+    favInstructor: 'Dan'
+});
+
+const john = new ProjectManagers({
+    name: 'John',
+    location: 'Lambda School',
+    age: 33,
+    favLanguage: 'Python',
+    specialty: 'Full-Stack',
+    catchPhrase: 'This way is more complicated',
+    gradClassName: 'WEB16',
+    favInstructor: 'Ryan'
+});
+
+
+//Console Log Tests. 
