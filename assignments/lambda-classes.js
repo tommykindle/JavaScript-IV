@@ -26,3 +26,24 @@ class Instructor extends Person {
     }
 }
 
+
+class Student extends Person {
+    constructor(props) {
+        super(props);
+        this.previousBackground = props.previousBackground
+        this.className = props.className
+        this.favSubjects = props.favSubjects
+    }
+    listSubjects() {
+        return this.favSubjects;
+    }
+
+    PRAssignment(subject) {
+        `${this.name} has submitted a PR for ${subject}`
+    }
+
+    sprintChallenge(subject) {
+        `${this.name} has begun sprint challenge on ${subject}`
+    }
+}
+
