@@ -9,7 +9,7 @@ class Person {
         `Hello my name is ${this.name}, I am from ${this.location} `
     }
 }
-
+// Instructor Class
 class Instructor extends Person {
     constructor(props) {
         super(props);
@@ -26,7 +26,7 @@ class Instructor extends Person {
     }
 }
 
-
+// Student Class
 class Student extends Person {
     constructor(props) {
         super(props);
@@ -47,7 +47,7 @@ class Student extends Person {
     }
 }
 
-
+//Project Managers Class
 class ProjectManagers extends Instructor {
     constructor(props) {
         super(props);
@@ -63,19 +63,42 @@ class ProjectManagers extends Instructor {
     }
 }
 
-
+//Instructors
 const dan = new Instructor({
     name: 'Dan',
     location: 'Lambda School',
     age: 55,
     favLanguage: 'JavaScript',
+    specialty: 'Open-Source',
     catchPhrase: 'Google it!'
-}); 
+});
 
 const ryan = new Instructor({
     name: 'Ryan',
     location: 'Lambda School',
     age: 33,
     favLanguage: 'Visual Basic',
-    catchPhrase: 'It is easy, just do it!' 
+    specialty: 'Full-Stack',
+    catchPhrase: 'It is easy, just do it!'
+});
+
+
+//Students
+const tommy = new Student({
+    name: 'Tommy',
+    age: 36,
+    location: 'California',
+    previousBackground: 'Network Administrator',
+    className: 'WEB21',
+    favSubjects: ['HTML', 'CSS', 'JavaScript']
+
+});
+
+const jane = new Student({
+    name: 'Jane',
+    age: 21,
+    location: 'Lambda School',
+    previousBackground: 'Playing Video Games',
+    className: 'WEB21',
+    favSubjects: ['HTML', 'CSS', 'JavaScript']
 }); 
